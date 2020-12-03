@@ -32,6 +32,7 @@ body {
     right: 0;
     z-index: 1000;
     color: #fff;
+    padding-top: 30px;
 }
 
 .header__logo {
@@ -39,21 +40,52 @@ body {
     font-weight: 700;
 }
 
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 /* Nav */
 .nav {
     font-size: 14px;
     text-transform: uppercase;
+    display: flex;
 }
 
 .nav__link {
     color: #fff;
     text-decoration: none;
 
-    transition: color .2s linear;
+    transition: color .1s linear;
+    margin-left: 50px;
+
+    position: relative;
 }
 
 .nav__link:hover {
     color: #fce38a;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fce38a;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
 }
 
 
