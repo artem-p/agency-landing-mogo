@@ -110,6 +110,15 @@ body {
     line-height: 1;
 }
 
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 60px auto 0;
+    background-color: #fff;
+}
+
 .intro__suptitle {
     font-family: 'Kaushan Script', cursive;
     font-size: 72px;
