@@ -84,7 +84,13 @@ body {
     transition: opacity .1s linear;
 }
 
-.nav__link:hover:after {
+.nav__link.active {
+    color: #fce38a;
+}
+
+.nav__link.active:after,
+.nav__link:hover:after
+{
     opacity: 1;
 }
 
