@@ -152,9 +152,46 @@ body {
     color: #333; 
 }
 
+/* Slider */
+.slider {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
 
+.slider__item {
+    padding: 20px 0;
+    border-top: 3px solid white;
+    width: 23%;
+    opacity: .7;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
 
+.slider__item.active {
+    opacity: 1;
+}
 
+.slider__item.active:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+
+    background-color: #f38181;
+
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__num {
+    font-size: 24px;
+    font-weight: bold;
+}
 
 
 
