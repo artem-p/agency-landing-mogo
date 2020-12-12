@@ -218,6 +218,27 @@ body {
     max-width: 950px;
     margin: 0 auto;
     margin-bottom: 40px;
-    text-align: center;s
+    text-align: center;
 }
 
+.section__suptitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333; 
+}
+
+.section__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.section__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 30px auto;
+}
